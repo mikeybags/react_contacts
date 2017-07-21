@@ -1,0 +1,134 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#loading {
+    padding-top: 40vh;
+    padding-left: 70px;
+}
+
+.contact-card {
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    display: inline-block; 
+    width: 335px; 
+    height: 80px; 
+    padding: 10px;
+    background-color: #EEE;
+}
+
+.selected {
+    background-color: #AAA;
+}
+
+.contact-card:last-of-type {
+    border-bottom: 1px solid black;
+}
+
+ul {
+    display: flex;
+    margin-bottom: 0;
+    padding: 0px;
+    height: 100vh;
+    overflow-y: scroll;
+    flex: 0 0 350px;
+    flex-direction: column;
+}
+
+.list-photo {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    margin-right: 10px;
+    font-size: 9px; /* this is only here because of the non-working photo/alt text */
+}
+
+.list-info {
+    display: inline-block;
+}
+
+.list-info p {
+    margin-bottom: 3px;
+}
+
+.list-name {
+    font-weight: 600;
+}
+
+.favorite {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    color: #FFC700;
+}
+
+.header-image {
+    display: inline-block;
+    vertical-align: top;
+    width: 225px;
+}
+
+.large-image {
+    height: 200px;
+}
+
+.info-header {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 35px;
+}
+
+#header-name {
+    margin: 15px 0;
+}
+
+.info-body-section {
+    margin-top: 25px;
+    position: relative;
+}
+
+.data-title {
+    color: #777;
+    margin-bottom: 0;
+}
+
+.data-value {
+    font-weight: 500;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.contact-type {
+    position: absolute;
+    right: 0px;
+}
+
+#map {
+    height: 250px;
+    width: 300px;
+    position: absolute;
+    right: 0px;
+}
+
+.detail-empty {
+    width: 90%;
+    margin: 40vh auto; 
+    text-align: center;
+}
+
+.contact-details {
+    vertical-align: top;
+    flex: 1 0 700px; 
+    padding: 50px;
+    position: relative;
+    font-size: 1.25em;
+    overflow: auto;
+}
